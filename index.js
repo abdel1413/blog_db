@@ -30,6 +30,21 @@ blogDoc.save();
 const findOne = blog.findOne({});
 console.log(findOne);
 
+//create new blog post using model.create()
+const article2 = blog.create({
+  title: "Article two",
+  slug: "Awesome post!",
+  published: true,
+  content: "This is the best post ever@",
+  tags: ["features", "announcement"],
+});
+
+//Note: when using model.create() method, it's automatically
+//save and inserted into db. So no need to call .save().
+//Also the _id is returned when logging out.
+
+console.log("article2", article2);
+
 mongoose
   .connect(process.env.BLOG_URI)
   .then(() => console.log("successfully connected"))
