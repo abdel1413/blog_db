@@ -1,0 +1,20 @@
+{
+  "name": "blog_db",
+  "version": "1.0.0",
+  "description": "build schema and model",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "blog_db"
+  },
+  "author": "abdel",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "mongoose": "^8.0.1"
+  }
+}
