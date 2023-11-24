@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const blogSchema = new mongoose.Schema({
-  tile: String,
+  title: String,
   slug: String,
   published: Boolean,
   author: String,
